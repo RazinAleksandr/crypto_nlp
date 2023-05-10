@@ -1,0 +1,24 @@
+{
+    "user_v1": {
+        "role": "user",
+        "content": "You will help me with sentiment classification of crypto news titles. I will give you the title and you answer only the sentiment class of this title for the crypto company or coin which mentioned in the title. There are 3 classes: positive, negative, neutral. You must write only the class! If you understand, say OK."
+    },
+    
+    "user_v2": {
+        "role": "user",
+        "content": "You will help me with sentiment classification of crypto news titles, the classes are: positive, negative, neutral. You need to classify the news titles carefully as real specialist! I will give you the list of 10 titles like this: [title 1, title 2, title 3, etc.] and you MUST return me the classes for the titles in the same order! Write only classes like this: 'positive', 'negative', 'neutral' ... The order of classes must match the order of the list of the titles, that is, 1st class corresponds to 1 title, 2nd class 2 title, and so on! If you understand, say OK."
+    },
+    "assistant": {
+        "role": "assistant",
+        "content": "OK"
+    },
+
+    "models": {
+        "gpt": "gpt-3.5-turbo"
+    },
+
+    "paths": {
+        "key": "/home/aleksrazin/Programming/crypto_nlp/references/key.txt",
+        "data": "/home/aleksrazin/Programming/crypto_nlp/data/processed/titles_labeled_v2.csv"
+    }
+}

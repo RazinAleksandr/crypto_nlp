@@ -1,0 +1,36 @@
+{
+    "model": {
+        "name": "bert-large-uncased",
+        "save_name": "bert_large_fasttext_cls",
+        "save_path": "/home/aleksrazin/Programming/crypto_nlp/models/saved_models",
+        "num_classes": 3    
+    },
+
+    "training": {
+        "batch_size": 2,
+        "learning_rate": 1e-4,
+        "scheduler": false,
+        "num_epochs": 1,
+        "test_size": 0.2,
+        "freeze": true,
+        "print_every": 55,
+        "val_step": 55,
+        "wandb": false
+    },
+
+    "predict": {
+        "input_path": "/home/aleksrazin/Programming/crypto_nlp/data/eval_data/input",
+        "output_path": "/home/aleksrazin/Programming/crypto_nlp/data/eval_data/output",
+        "model_path": "/home/aleksrazin/Programming/crypto_nlp/models/saved_models/bert_large_fasttext_cls.pt",
+        "batch_size": 4,
+        "device": "cpu"
+    },
+    
+    "data_paths": {
+        "texts": "/home/aleksrazin/ITMO/Big_Data/sentiment/pipeline/data/texts.csv",
+        "embeddings": "/home/aleksrazin/ITMO/Big_Data/sentiment/pipeline/data/word_embeddings.npy" ,
+        "full_df": "/home/aleksrazin/ITMO/Big_Data/sentiment/pipeline/data/full_df.csv"
+    },
+
+    "device": "cpu"
+}
