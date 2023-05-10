@@ -7,14 +7,14 @@
     },
 
     "training": {
-        "batch_size": 2,
+        "batch_size": 32,
         "learning_rate": 1e-4,
         "scheduler": false,
-        "num_epochs": 1,
+        "num_epochs": 30,
         "test_size": 0.2,
         "freeze": true,
         "print_every": 55,
-        "val_step": 55,
+        "val_step": 165,
         "wandb": false
     },
 
