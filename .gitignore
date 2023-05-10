@@ -79,6 +79,7 @@ target/
 /data/
 /models/saved_models/
 /references/key.txt
+/reports/reviews/
 
 # Mac OS-specific storage files
 .DS_Store
